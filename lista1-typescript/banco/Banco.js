@@ -1,0 +1,18 @@
+"use strict";
+exports.__esModule = true;
+var ContaCorrente_1 = require("../banco/model/ContaCorrente");
+var ContaInvestimento_1 = require("../banco/model/ContaInvestimento");
+var ContaPoupanca_1 = require("../banco/model/ContaPoupanca");
+var contacorente = new ContaCorrente_1.ContaCorrente(2234, 0);
+contacorente.sacar(2);
+contacorente.valorizar();
+var contapoupanca = new ContaPoupanca_1.ContaPoupanca(10, 1);
+contapoupanca.valorizar();
+contapoupanca.sacar(1);
+contapoupanca.depositar(100);
+contapoupanca.extrato();
+var containvestimento = new ContaInvestimento_1.ContaInvestimeto(0, 2);
+containvestimento.valorizar();
+containvestimento.sacar(1);
+containvestimento.depositar(100);
+containvestimento.extrato();
